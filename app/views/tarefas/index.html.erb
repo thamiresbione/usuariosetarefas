@@ -15,7 +15,7 @@
   <tbody>
     <% @tarefas.each do |tarefa| %>
       <tr>
-        <td><%= tarefa.usuario_id %></td>
+        <td><%= tarefa.usuario.nome %></td>
         <td><%= tarefa.titulo %></td>
         <td><%= tarefa.descricao %></td>
         <td><%= link_to 'Show', tarefa %></td>
