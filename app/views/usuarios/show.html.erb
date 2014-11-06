@@ -15,5 +15,13 @@
   <%= @usuario.email %>
 </p>
 
+<p>
+  <strong>Tarefas do Usuário: </strong>
+  <% @usuario.tarefas.each do |p| %>
+  <td><%= p.titulo %></td>
+<% end %> 
+</p>
+
+
 <%= link_to 'Edit', edit_usuario_path(@usuario) %> |
 <%= link_to 'Back', usuarios_path %>
